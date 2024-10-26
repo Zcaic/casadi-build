@@ -1,0 +1,12 @@
+prefix=C:/Users/Zcaic/Desktop/CXX/casadi_build/install
+exec_prefix=C:/Users/Zcaic/Desktop/CXX/casadi_build/install/casadi
+libdir=C:/Users/Zcaic/Desktop/CXX/casadi_build/install/casadi
+includedir=C:/Users/Zcaic/Desktop/CXX/casadi_build/install/casadi/include
+
+Name: casadi
+Description: CasADi is a symbolic framework for automatic differentation and numeric optimization
+URL: http://casadi.org
+Version: 3.6.7+
+Requires: 
+Libs: -L${libdir} -lcasadi
+Cflags: -I${includedir}

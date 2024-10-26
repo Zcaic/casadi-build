@@ -1,0 +1,27 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "mingw",
+            "displayName": "GCC 14.2.0 x86_64-w64-mingw32 (ucrt64)",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/install",
+                "CMAKE_C_COMPILER": "gcc.exe",
+                "CMAKE_CXX_COMPILER": "g++.exe",
+                "CMAKE_BUILD_TYPE": "Release",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+                "WITH_EXAMPLES": "OFF",
+                "WITH_IPOPT": "ON",
+                "WITH_BUILD_REQUIRED": "ON",
+                "WITH_OPENMP": "ON",
+                "WITH_LAPACK": "ON",
+                "ENABLE_SHARED":"ON",
+                "ENABLE_STATIC":"OFF",
+                "BUILD_TESTING":"OFF",
+                "WITH_THREAD_MINGW":"ON"
+            }
+        }
+    ]
+}

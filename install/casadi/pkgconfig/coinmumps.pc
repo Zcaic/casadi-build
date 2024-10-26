@@ -1,0 +1,15 @@
+prefix=C:/Users/Zcaic/Desktop/CXX/casadi_build/build/external_projects
+#prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/coin-or/mumps
+
+Name: Mumps
+Description: Multifrontal Massively Parallel sparse direct Solver
+URL: https://github.com/coin-or-tools/ThirdParty-Mumps
+Version: 3.0.1
+Cflags: -I${includedir}
+Libs: -L${libdir} -lcoinmumps
+Requires.private: 
+#Libs: -L${libdir} -lcoinmumps -LC:/Users/Zcaic/Desktop/CXX/casadi_build/build/external_projects/lib -lmetis -lm  -LC:/Users/Zcaic/Desktop/CXX/casadi_build/build/external_projects/bin -lcasadi-tp-openblas   -LD:/Portable/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0 -LD:/Portable/msys64/ucrt64/bin/../lib/gcc -LD:/Portable/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LD:/Portable/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../lib -LD:/Portable/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../../../x86_64-w64-mingw32/lib -LD:/Portable/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/14.2.0/../../.. -lgfortran -lmingw32 -lmingwex -lmsvcrt -lkernel32 -lquadmath -lm -lpthread -ladvapi32 -lshell32 -luser32 -lpthread 
+#Requires: 
